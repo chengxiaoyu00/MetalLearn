@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6513A3B12689D2FC00945B45 /* shaders.h in Resources */ = {isa = PBXBuildFile; fileRef = 6513A3B02689D0BC00945B45 /* shaders.h */; };
 		65F7739A2689C4CC00C2BC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F773992689C4CC00C2BC5D /* AppDelegate.swift */; };
 		65F7739C2689C4CC00C2BC5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7739B2689C4CC00C2BC5D /* SceneDelegate.swift */; };
 		65F7739E2689C4CC00C2BC5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7739D2689C4CC00C2BC5D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		65F773A92689C4CD00C2BC5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F773A72689C4CD00C2BC5D /* LaunchScreen.storyboard */; };
 		65F773B42689C4CD00C2BC5D /* MetalLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F773B32689C4CD00C2BC5D /* MetalLearnTests.swift */; };
 		65F773BF2689C4CD00C2BC5D /* MetalLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F773BE2689C4CD00C2BC5D /* MetalLearnUITests.swift */; };
+		65F773CD2689CC2C00C2BC5D /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 65F773CC2689CC2C00C2BC5D /* shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6513A3B02689D0BC00945B45 /* shaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shaders.h; sourceTree = "<group>"; };
 		65F773962689C4CC00C2BC5D /* MetalLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F773992689C4CC00C2BC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65F7739B2689C4CC00C2BC5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		65F773BA2689C4CD00C2BC5D /* MetalLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F773BE2689C4CD00C2BC5D /* MetalLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLearnUITests.swift; sourceTree = "<group>"; };
 		65F773C02689C4CD00C2BC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F773CC2689CC2C00C2BC5D /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				65F773A72689C4CD00C2BC5D /* LaunchScreen.storyboard */,
 				65F773AA2689C4CD00C2BC5D /* Info.plist */,
 				65F773A22689C4CC00C2BC5D /* MetalLearn.xcdatamodeld */,
+				65F773CC2689CC2C00C2BC5D /* shaders.metal */,
+				6513A3B02689D0BC00945B45 /* shaders.h */,
 			);
 			path = MetalLearn;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6513A3B12689D2FC00945B45 /* shaders.h in Resources */,
 				65F773A92689C4CD00C2BC5D /* LaunchScreen.storyboard in Resources */,
 				65F773A62689C4CD00C2BC5D /* Assets.xcassets in Resources */,
 				65F773A12689C4CC00C2BC5D /* Main.storyboard in Resources */,
@@ -262,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F773A42689C4CC00C2BC5D /* MetalLearn.xcdatamodeld in Sources */,
+				65F773CD2689CC2C00C2BC5D /* shaders.metal in Sources */,
 				65F7739E2689C4CC00C2BC5D /* ViewController.swift in Sources */,
 				65F7739A2689C4CC00C2BC5D /* AppDelegate.swift in Sources */,
 				65F7739C2689C4CC00C2BC5D /* SceneDelegate.swift in Sources */,
@@ -449,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.MetalLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MetalLearn/shaders.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.MetalLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MetalLearn/shaders.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
